@@ -1,0 +1,38 @@
+colocar espaço 
+fazer sentenças coerentes 
+
+gerar dois grupos de vetores de features 
+distancias l2 para calcular semelhança entre os dois textos 
+
+outra similhar correlação , distancias de cossenos 
+
+-1 distante ( invesamente proporcional ) 
+0 nada haver 
++1 proximos
+
+combinar as matrizes com uma função combine 
+testar estrategias 
+1 concaternar horizontalmente, linha com linha 	
+2 subtrair uma matriz da outra e fazer ao quadrado 
+
+rede constrativa 
+
+e1 = embed(...) 
+e2 = embed(...) 
+
+np.concat((e1, e2), axis=1) 
+x = np.concat(...) 
+x = (e1-e2)**2 
+x = e1+e2 
+x = e1*e2 
+x = abs(e1-e2) 
+
+pickle  
+pickle.dump(x_train_embeddings, '...p') 
+
+smotteen 
+usar o rate , colocar 1 
+
+import de função só coloca no mesmo path 
+
+https://keras.io/examples/vision/siamese_contrastive/
